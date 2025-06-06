@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: doge-bot
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: "python doge_webhook_bot.py"
+    envVars:
+      - key: API_KEY
+        value: ISI_API_KEY_KAMU
+      - key: API_SECRET
+        value: ISI_API_SECRET_KAMU
